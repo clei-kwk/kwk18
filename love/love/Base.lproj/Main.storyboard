@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="love" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lyrics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELk-QR-4eP">
+                                <rect key="frame" x="86.5" y="259" width="202" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="148" id="P8B-Yp-h9j"/>
+                                    <constraint firstAttribute="width" constant="202" id="hCZ-zp-G90"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake it off for lyrics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="956-O4-zUD">
+                                <rect key="frame" x="65" y="66" width="245" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="P6M-65-0M1"/>
+                                    <constraint firstAttribute="width" constant="245" id="QHc-X7-8bm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-08-09 at 3.55.33 PM" translatesAutoresizingMaskIntoConstraints="NO" id="NM3-Ck-3Y1">
+                                <rect key="frame" x="79" y="148" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ELk-QR-4eP" firstAttribute="top" secondItem="956-O4-zUD" secondAttribute="bottom" constant="92" id="2fs-zj-WNB"/>
+                            <constraint firstItem="ELk-QR-4eP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DMQ-Gy-191"/>
+                            <constraint firstItem="956-O4-zUD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gZx-aU-ZdR"/>
+                            <constraint firstItem="ELk-QR-4eP" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-10.5" id="vf0-RJ-Wij"/>
+                            <constraint firstItem="ELk-QR-4eP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xbx-BQ-VqO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lyricsL" destination="ELk-QR-4eP" id="4nK-8E-E89"/>
+                        <outlet property="titleL" destination="956-O4-zUD" id="C7h-99-1bL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Screen Shot 2018-08-09 at 3.55.33 PM" width="906" height="566"/>
+    </resources>
+</document>
